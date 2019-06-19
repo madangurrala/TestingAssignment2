@@ -8,8 +8,21 @@ namespace TestingAssignment2
 {
     class Program
     {
+       
+
         static void Main(string[] args)
         {
+
+            Program testing = new Program();
+            testing.TriangleMenu();
+
+            Console.ReadKey();
+           
+        }
+
+        public void TriangleMenu()
+        {
+
         }
     }
 }
