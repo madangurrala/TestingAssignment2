@@ -9,9 +9,8 @@ using NUnit.Framework;
 namespace TestProject
 {
     [TestFixture]
-    public class Test_Class
+    public class TestClass
     {
-
         //This method tests if given input forms an isosceles triangle
         [Test]
         public void Test_isosceles()
@@ -25,7 +24,7 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers forms an isosceles triangle");
+            Assert.AreEqual(result, "The given numbers form a Triangle and it is an isosceles triangle");
         }
 
         //This method tests if given input forms an equilateral triangle
@@ -41,7 +40,7 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers forms an equilateral Triangle");
+            Assert.AreEqual(result, "The given numbers form a Triangle and it is an equilateral Triangle");
         }
 
         //This method tests if given input forms a scalene triangle
@@ -57,7 +56,7 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers forms a scalene triangle");
+            Assert.AreEqual(result, "The given numbers form a Triangle and it is a scalene triangle");
         }
 
 
@@ -110,21 +109,7 @@ namespace TestProject
         }
 
 
-        //[Test]
-        //public void Tests_First_If_Condition4()
-        //{
-        //    //Arrange
-        //    int firstNum = 120;
-        //    int secondNum = 345;
-        //    int thirdNum = 109;
-
-        //    //Act
-        //    string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
-
-        //    //Assert
-        //    Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
-        //}
-
+      
         //[Test]
         //public void Tests_First_If_Condition5()
         //{
@@ -140,6 +125,5 @@ namespace TestProject
         //    Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
         //}
 
-       
     }
 }
