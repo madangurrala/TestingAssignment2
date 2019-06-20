@@ -8,8 +8,6 @@ namespace TestingAssignment2
 {
     public static class TriangleSolver
     {
-
-
         public static string Analyze(int firstNumber, int secondNumber, int thirdNumber)
         {
             string result = string.Empty;
@@ -19,24 +17,20 @@ namespace TestingAssignment2
             tLeft = secondNumber + thirdNumber;
             tBase = thirdNumber + firstNumber;
 
-
-            if(tRight > thirdNumber && tLeft > 
-                firstNumber && tBase > secondNumber) {
-
-                Console.WriteLine("\nThe given numbers forms a Triangle\n");
-
+            if(tRight > thirdNumber && tLeft > firstNumber && tBase > secondNumber)
+            {
                 if(firstNumber == secondNumber && firstNumber == thirdNumber)
                 {
-                    result = "The given numbers forms an equilateral Triangle";
+                    result = "The given numbers form a Triangle and it is an equilateral Triangle";
                 }
 
                 else if ((firstNumber == secondNumber) || (firstNumber == thirdNumber) || (thirdNumber == secondNumber))
                 {
-                    result = "The given numbers forms an isosceles triangle";
+                    result = "The given numbers form a Triangle and it is an isosceles triangle";
                 }
                 else if((firstNumber != secondNumber) && (secondNumber != thirdNumber) )
                 {
-                    result = "The given numbers forms a scalene triangle";
+                    result = "The given numbers form a Triangle and it is a scalene triangle";
                 }
 
             }
