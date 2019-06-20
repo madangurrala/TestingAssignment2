@@ -11,9 +11,10 @@ namespace TestProject
     [TestFixture]
     public class TestClass
     {
-        //This method tests if given input forms an isosceles triangle
+        /*This method tests if given input forms an isosceles triangle where 
+        second and third number are equal*/
         [Test]
-        public void Test_isosceles()
+        public void Test_Isosceles()
         {
             //Arrange
             int firstNum = 12;
@@ -45,7 +46,7 @@ namespace TestProject
 
         //This method tests if given input forms a scalene triangle
         [Test]
-        public void Test_scalene()
+        public void Test_Scalene()
         {
             //Arrange
             int firstNum = 132;
@@ -109,21 +110,38 @@ namespace TestProject
         }
 
 
-      
-        //[Test]
-        //public void Tests_First_If_Condition5()
-        //{
-        //    //Arrange
-        //    int firstNum = 0;
-        //    int secondNum = 0;
-        //    int thirdNum = 0;
+        //This method tests where the sum of two sides equals the third one
+        [Test]
+        public void Two_Inputs_Sum_IsEqual_ToThirdOne()
+        {
+            //Arrange
+            int firstNum = 20;
+            int secondNum = 15;
+            int thirdNum = 5;
 
-        //    //Act
-        //    string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
+            //Act
+            string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
-        //    //Assert
-        //    Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
-        //}
+            //Assert
+            Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
+        }
+
+        //This method tests isoscele triangle where first and third number are equal
+        [Test]
+        public void Test_Isoscele_Triangle_With_DifferentInputsEqal()
+        {
+            //Arrange
+            int firstNum = 37;
+            int secondNum = 15;
+            int thirdNum = 37;
+
+            //Act
+            string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
+
+            //Assert
+            Assert.AreEqual(result, "The given numbers form a Triangle and it is an isosceles triangle");
+        }
+
 
     }
 }
