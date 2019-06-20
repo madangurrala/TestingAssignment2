@@ -25,7 +25,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers form a Triangle and it is an isosceles triangle");
+            Assert.AreEqual(result, "The numbers (" + firstNum + ", " + secondNum + ", "
+                                        + thirdNum + ") can form an isosceles triangle");
         }
 
         //This method tests if given input forms an equilateral triangle
@@ -41,7 +42,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers form a Triangle and it is an equilateral Triangle");
+            Assert.AreEqual(result, "The numbers (" + firstNum + ", " + secondNum + ", "
+                                + thirdNum + ") can form an equilateral Triangle");
         }
 
         //This method tests if given input forms a scalene triangle
@@ -57,7 +59,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers form a Triangle and it is a scalene triangle");
+            Assert.AreEqual(result, "The numbers (" + firstNum + ", " + secondNum + ", " +
+                                            thirdNum + ") can form a scalene triangle");
         }
 
 
@@ -74,7 +77,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
+            Assert.AreEqual(result, "The given numbers (" + firstNum + ", " + secondNum + ", " +
+                                thirdNum + ")  doesn't form a Triangle");
         }
 
         //This method tests when all the zeros are passed
@@ -90,7 +94,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
+            Assert.AreEqual(result, "The given numbers (" + firstNum + ", " + secondNum + ", " +
+                                thirdNum + ")  doesn't form a Triangle");
         }
 
         //This method tests when negative values are passed
@@ -106,7 +111,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
+            Assert.AreEqual(result, "The given numbers (" + firstNum + ", " + secondNum + ", " +
+                                thirdNum + ")  doesn't form a Triangle");
         }
 
 
@@ -123,7 +129,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers doesn't form a Triangle");
+            Assert.AreEqual(result, "The given numbers (" + firstNum + ", " + secondNum + ", " +
+                                thirdNum + ")  doesn't form a Triangle");
         }
 
         //This method tests isoscele triangle where first and third number are equal
@@ -139,7 +146,8 @@ namespace TestProject
             string result = TriangleSolver.Analyze(firstNum, secondNum, thirdNum);
 
             //Assert
-            Assert.AreEqual(result, "The given numbers form a Triangle and it is an isosceles triangle");
+            Assert.AreEqual(result, "The numbers (" + firstNum + ", " + secondNum + ", "
+                                        + thirdNum + ") can form an isosceles triangle");
         }
 
 

@@ -15,39 +15,46 @@ namespace TestingAssignment2
         {
             //Assigned empty to result variable, if not while returning it returns unassigned value
             string result = string.Empty;
-
-            int tRight, tLeft, tBase;
-
             //Writing a simple math for the Triangle sides
+            int tRight, tLeft, tBase;           
             tRight = firstNumber + secondNumber;
             tLeft = secondNumber + thirdNumber;
             tBase = thirdNumber + firstNumber;
 
             //Checking if a triangle can be formed with condition
-            if(tRight > thirdNumber && tLeft > firstNumber && tBase > secondNumber)
+            if (tRight > thirdNumber && tLeft > firstNumber && tBase > secondNumber)
             {
+                Console.WriteLine("The given numbers form a Triangle");
+
+                //Checking if all the sides are equal
                 if(firstNumber == secondNumber && firstNumber == thirdNumber)
                 {
-                    result = "The given numbers form a Triangle and it is an equilateral Triangle";
+                    result = "The numbers (" + firstNumber+ ", " + secondNumber + ", "
+                                +thirdNumber +") can form an equilateral Triangle";
                 }
 
+                // checking at least two sides are equal
                 else if ((firstNumber == secondNumber) || (firstNumber == thirdNumber) || (thirdNumber == secondNumber))
                 {
-                    result = "The given numbers form a Triangle and it is an isosceles triangle";
+                    result = "The numbers (" + firstNumber+ ", " + secondNumber + ", " 
+                                        + thirdNumber +") can form an isosceles triangle";
                 }
+                //checking if none of the sides are equal
                 else if((firstNumber != secondNumber) && (secondNumber != thirdNumber) )
                 {
-                    result = "The given numbers form a Triangle and it is a scalene triangle";
+                    result = "The numbers (" + firstNumber + ", " +secondNumber + ", " + 
+                                            thirdNumber +") can form a scalene triangle";
                 }
 
             }
             else
             {
-                result = "The given numbers doesn't form a Triangle";
+                result = "The given numbers (" + firstNumber + ", " +secondNumber + ", " + 
+                                thirdNumber + ")  doesn't form a Triangle";
             }
-
-            //Returning result which is a string variable
-            return result;
+            
+            //returning the string variable result
+            return result ;
         }
 
     }
